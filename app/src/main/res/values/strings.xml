@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Waste Management</string>
+
+    <string-array name="category">
+        <item>Choose Category</item>
+        <item>Household</item>
+        <item>Commercial</item>
+        <item>Institutional</item>
+        <item>Bio-Medical</item>
+    </string-array>
+
+    <string-array name="schoolarray">
+        <item>Choose Option</item>
+        <item>Lower Primary</item>
+        <item>Upper Primary</item>
+        <item>UG</item>
+        <item>PG</item>
+    </string-array>
+
+    <string-array name="institutionalarray">
+        <item>Choose Option</item>
+        <item>Schools</item>
+        <item>Colleges</item>
+        <item>Offices</item>
+        <item>Training Centers</item>
+        <item>Religious Bodies</item>
+        <item>Orphanage</item>
+        <item>Charity Homes</item>
+        <item>Recreational Centers/ Parks/ Botanical Garden</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="commercialarray">
+        <item>Choose Option</item>
+        <item>Shops</item>
+        <item>Hawkers</item>
+        <item>Hotels</item>
+        <item>Homestays</item>
+        <item>Resorts</item>
+        <item>GuestHouse</item>
+        <item>PGs</item>
+    </string-array>
+
+</resources>

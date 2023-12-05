@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Sender Message Layout -->
+    <LinearLayout
+        android:id="@+id/senderMessageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="4dp"
+        android:background="@drawable/sender_bubble"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/senderMessageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:text="12/11/13"
+            android:layout_gravity="end"
+            android:gravity="center|end"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="8dp"/>
+
+        <TextView
+            android:id="@+id/senderMessageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="start"
+            android:gravity="center|start"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/senderMessageDatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:text="12/11/13"
+            android:layout_gravity="end"
+            android:gravity="center|end"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="8dp"/>
+
+        <TextView
+            android:id="@+id/senderMessageread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:layout_gravity="end"
+            android:gravity="center|end"
+            android:text="R"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+    <!-- Receiver Message Layout -->
+    <LinearLayout
+        android:id="@+id/receiverMessageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="start"
+        android:background="@drawable/receiver_bubble"
+        android:padding="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/receiverMessagedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:layout_gravity="start"
+            android:gravity="center|start"
+            android:text="Read"
+            android:paddingBottom="2dp"
+            android:textColor="@color/grey"
+            android:textSize="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/receiverMessageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="end"
+            android:gravity="center|end"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:id="@+id/receiverMessageDatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:text="12/11/13"
+            android:layout_gravity="start"
+            android:gravity="center|start"
+            android:paddingBottom="2dp"
+            android:textColor="@color/grey"
+            android:textSize="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/receiverMessageread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="2dp"
+            android:layout_gravity="start"
+            android:gravity="center|start"
+            android:text="Read"
+            android:paddingBottom="2dp"
+            android:textColor="@color/grey"
+            android:textSize="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

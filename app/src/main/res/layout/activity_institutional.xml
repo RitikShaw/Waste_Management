@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".HouseHold">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Survey"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/back"
+        app:layout_constraintBottom_toBottomOf="@id/back"
+        app:layout_constraintStart_toEndOf="@id/back"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/whitebutton"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        app:layout_constraintHeight_percent="0.91"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/greenborder"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Locality:"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <EditText
+                        android:id="@+id/locality"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:hint="Locality:"
+                        android:textSize="15dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="25dp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:background="@drawable/button2"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name of the Institution(s):"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+
+                    <EditText
+                        android:id="@+id/institutionname"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:hint="Institution's Name:"
+                        android:textSize="15dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="25dp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:background="@drawable/button2"
+                        android:textColor="@color/black"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name of the Respondent:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:hint="Respondent's Name:"
+                        android:textSize="15dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="25dp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:background="@drawable/button2"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rank/Position of the Respondent:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+
+                    <EditText
+                        android:id="@+id/rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:hint="Respondent's Rank:"
+                        android:textSize="15dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="25dp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:inputType="text"
+                        android:background="@drawable/button2"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Strength of the Institution(s):"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+
+                    <EditText
+                        android:id="@+id/strength"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:hint="Strength:"
+                        android:textSize="15dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="25dp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:inputType="number"
+                        android:background="@drawable/button2"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:background="@drawable/greenborder"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:text="Solid Waste Management"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/lightgreenbutton"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How do you dispose Solid Waste?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/solidwastedisposalGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="7dp"
+                                android:text="Through Waste Collector employed by Self" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="10dp"
+                                android:text="Through Waste collector employed by Shillong Municipal Board" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="10dp"
+                                android:text="Through Waste Collector employed by NGO/SHG" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="10dp"
+                                android:text="Through Waste Collector employed by Dorbar Shnong" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="7dp"
+                                android:text="Dispose into nearby Waste Bins" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="7dp"
+                                android:text="Garden Composting" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="7dp"
+                                android:text="Directly into Garbage" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:paddingTop="7dp"
+                                android:text="Others" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/otherssolidwastelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Specify:"
+                            android:textSize="17dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <EditText
+                            android:id="@+id/otherssolidwastedisposal"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="Specify:"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="25dp"
+                            android:textColorHint="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:background="@drawable/button2"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Are you aware of the Solid Waste Management Rules 2016?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/solidwastemgmtgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yesswmLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Do you abide by the Rules?"
+                            android:textSize="17dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button2"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/rulesabidegrp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="7dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="10dp"
+                                    android:text="No" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How many times in a week does garbage truck collect waste?"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/garbagetruckgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Daily" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Alternative Day" />
+
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Twice a week" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Once a week" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Less than once a week" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lessthanaweekLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/lessthanaweek"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="Specify:"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="25dp"
+                            android:textColorHint="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:background="@drawable/button2"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Is the stopping point of the garbage collection truck is easily accessible to dispose water?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/stoppingpointgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/stoppingpointLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Reasons:"
+                            android:textSize="17dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button2"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/reasongrp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="7dp"
+                                    android:text="Far from my establishment/ resident about 30 metres" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Far from my establishment/ resident about 50 metres" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Far from my establishment/ resident about 100 metres" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Far from my establishment/ resident about 500 metres" />
+
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/greenborder"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:text="Liquid Waste Management"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/lightgreenbutton"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Do you have provision for sanitary toilets in the institution?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/sanitarytoiletsgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sanitarytoiletsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Where do you use the toilet?"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <EditText
+                            android:id="@+id/toilet"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="Specify:"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="25dp"
+                            android:textColorHint="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:background="@drawable/button2"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Is there a proper drainage system in the vicinity of the institution?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/drainagesystemgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How do you dispose sewage from your toilets?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/sewagedisposalgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Septic Tank with Soak Pit" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Septic Tank without Soak Pit" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Dry Pit" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Others" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/othersewagedisposalLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/othersewagedisposal"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="Specify:"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="25dp"
+                            android:textColorHint="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:background="@drawable/button2"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Condition of the Septic Tank"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/setictankgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Functional" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Overflowing" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Defective" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/uploadpicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Upload photo/photos of Septic Tank:"
+                        android:background="@drawable/greenborder"
+                        android:textStyle="bold"
+                        android:textColor="@color/light_green"
+                        android:textSize="15dp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/imageContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone">
+                            <!-- ImageView elements will be added dynamically here -->
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="When the septic tanks are full, is there any issue in cleaning the septic tanks?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/setictankfullgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yesseptictankfullLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="What type of issue?"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button2"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/setictankfullissuegrp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:text="Location of the septic tank is inaccessible by the Cesspool tanks about 30 meters" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="7dp"
+                                    android:text="Location of the septic tank is inaccessible by the Cesspool tanks about 50 meters" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Location of the septic tank is inaccessible by the Cesspool tanks about 100 meters" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Location of the septic tank is inaccessible by the Cesspool tanks about 500 meters" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Are you aware of the Effluent Treatment Tank system?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/etpmethodgrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="No" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yesetpmethodknowlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Have you installed it?"
+                            android:textSize="17dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button2"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/etpinstalledgrp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins"
+                                    android:textSize="15dp"
+                                    android:text="No" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/etpmethodtypeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="What type of methodology are you using?"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <EditText
+                            android:id="@+id/etpmethodspecify"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="Specify:"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="25dp"
+                            android:textColorHint="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:background="@drawable/button2"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How do you dispose used water coming out from your institution?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/usedwaterdisposal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Garden" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Water Bodies/ Drains" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/waterbodiesLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Outfalls?"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <EditText
+                            android:id="@+id/waterbodiesoutfalls"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="Specify:"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="25dp"
+                            android:textColorHint="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:background="@drawable/button2"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Do you practice trapping of solid waste before you discharge the used water from your institution?"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/rgTrapSolidWaste"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="15dp"
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button2"
+                        android:scrollbarSize="25dp"
+                        android:textColorHint="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRemarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/button2"
+                            android:ems="15"
+                            android:gravity="bottom|start"
+                            android:maxLines="15"
+                            android:fontFamily="@font/poppins"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/orangebtn"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginEnd="100dp"
+                        android:textSize="18dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
